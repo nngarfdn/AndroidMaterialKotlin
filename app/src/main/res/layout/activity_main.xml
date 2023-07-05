@@ -16,21 +16,26 @@
         android:layout_gravity="center_horizontal"
         android:text="@string/simple_calculator" />
 
-    <EditText
-        android:id="@+id/edt_number_1"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number"
         android:layout_marginTop="16dp"
-        android:hint="@string/masukkan_angka"/>
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edt_number_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/masukkan_angka"/>
 
-    <EditText
-        android:id="@+id/edt_number_2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:layout_marginTop="8dp"
-        android:hint="@string/masukkan_angka"/>
+        <EditText
+            android:id="@+id/edt_number_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/masukkan_angka"/>
+    </LinearLayout>
+
 
     <Button
         android:id="@+id/btn_calculate"
